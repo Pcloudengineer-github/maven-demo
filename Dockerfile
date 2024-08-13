@@ -5,7 +5,7 @@ FROM openjdk:8
 EXPOSE 8080
 
 # Add the JAR file to the container
-ADD target/docker-jenkins-integration-sample.jar /docker-jenkins-integration-sample.jar
+ADD target/Cloudinfotech-0.1-SNAPSHOT.jar /docker-jenkins-integration-sample.jar
 
 # Set the entry point to run the JAR file
 ENTRYPOINT ["java", "-jar", "/docker-jenkins-integration-sample.jar"]
